@@ -29,3 +29,6 @@ review = Review.first
 puts "Review for #{review.product.name} by #{review.user.name}:"
 puts "Star rating: #{review.star_rating}"
 puts "Comment: #{review.comment}"
+
+average_rating = product.average_rating
+puts "Average rating for #{product.name}: #{average_rating}"
