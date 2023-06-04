@@ -1,0 +1,38 @@
+puts "🌱 Seeding data..."
+user1 = User.create(name: "Johnbis")
+user2 = User.create(name: "Janice")
+
+product1 = Product.create(name: "Emorch")
+product2 = Product.create(name: "Bulvie")
+product3 = Product.create(name: "Kraken")
+product4 = Product.create(name: "Yummie")
+product5 = Product.create(name: "Zuccini")
+product6 = Product.create(name: "Mint")
+product7 = Product.create(name: "Illris")
+product8 = Product.create(name: "Rawr")
+product9 = Product.create(name: "Olives")
+product10 = Product.create(name: "Venus")
+
+
+product1.leave_review(user1, 4, "Great product!")
+product1.leave_review(user2, 5, "Excellent!")
+product2.leave_review(user1, 3, "Decent!")
+product2.leave_review(user2, 4, "Great product!")
+product3.leave_review(user1, 2, "Fairly good!")
+product3.leave_review(user2, 3, "Decent!")
+product4.leave_review(user1, 2, "Fairly good!")
+product4.leave_review(user2, 1, "Can do better!")
+product5.leave_review(user1, 4, "Great product!")
+product5.leave_review(user2, 5, "Excellent!")
+product6.leave_review(user1, 2, "Fairly good!")
+product6.leave_review(user2, 4, "Great product!")
+product7.leave_review(user1, 1, "Can do better!")
+product7.leave_review(user2, 3, "Decent!")
+product8.leave_review(user1, 3, "Decent!")
+product8.leave_review(user2, 5, "Excellent!")
+product9.leave_review(user1, 4, "Great product!")
+product9.leave_review(user2, 4, "Great product!")
+product10.leave_review(user1, 1, "Can do better!")
+product10.leave_review(user2, 3, "Decent!")
+
+puts "🌱 Done seeding!"
